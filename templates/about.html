@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Career Guidance System - About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!--Header-->
+    <header id="header" class="transparent-nav" style="position: fixed;background-color: rgb(120, 70, 167); top: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a class="logo" href="{{ url_for('career') }}">Career.ly</a>
+                </div>
+                <button class="navbar-toggle">
+                    <span></span>
+                </button>
+            </div>
+            <nav id="nav">
+                <ul class="main-menu nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('career') }}">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                        <div class="dropdown-content">
+                            <a href="{{ url_for('career') }}">Career Prediction</a>
+                            <a href="{{ url_for('courses') }}">Courses</a>
+                            <a href="{{ url_for('blog') }}">Knowledge Network</a>
+                        </div>
+                    </li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-area section">
+        <div class="bg-image bg-parallax overlay" style="background-image:url({{ url_for('static', filename='img/bgc2.jpg') }});"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <ul class="hero-area-tree">
+                        <li><a href="{{ url_for('career') }}">Home</a></li>
+                        <li>About</li>
+                    </ul>
+                    <h1 class="white-text">About Career.ly</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h2 style="font-size: 35px;">About Career.ly</h2>
+                        <p class="lead" style="font-size: 18px; font-style: italic; margin-top: 50px;">Education seekers get a personalised experience on our site, based on educational background and career interest, enabling them to make well informed course and career decisions. The decision making is empowered with easy access to detailed information on career choices, courses, exams, colleges, admission criteria, eligibility, placement statistics, rankings, reviews, scholarships, latest updates etc as well as by interacting with other career.ly users, experts, current students in colleges and alumni groups. We have introduced several student oriented products and tools like Career Prediction, Knowledge Network, Daily Bytes, Blogs, Community discussion forum, and various Courses.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="{{ url_for('static', filename='img/about.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <a class="logo" style="font-size: 30px;" href="{{ url_for('career') }}">Career.ly</a>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-footer" class="row">
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="footer-copyright">
+                        <span>&copy; Copyright 2025. All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

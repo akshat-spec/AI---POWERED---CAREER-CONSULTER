@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intelligent Career Guidance System - Knowledge Network</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css1/bootstrap.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css1/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css1/s.css') }}" rel="stylesheet" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!--Header-->
+    <header id="header" class="transparent-nav" style="position: fixed;background-color: rgb(120, 70, 167); top: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    <a class="logo" href="{{ url_for('career') }}">Career.ly</a>
+                </div>
+                <button class="navbar-toggle">
+                    <span></span>
+                </button>
+            </div>
+            <nav id="nav">
+                <ul class="main-menu nav navbar-nav navbar-right">
+                    <li><a href="{{ url_for('career') }}">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="javascript:void(0)">Services <span> &#11167;</span></a>
+                        <div class="dropdown-content">
+                            <a href="{{ url_for('career') }}">Career Prediction</a>
+                            <a href="{{ url_for('courses') }}">Courses</a>
+                            <a href="{{ url_for('blog') }}">Knowledge Network</a>
+                        </div>
+                    </li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-area section">
+        <div class="bg-image bg-parallax overlay" style="background-image:url({{ url_for('static', filename='img/bgc2.jpg') }});"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <ul class="hero-area-tree">
+                        <li><a href="{{ url_for('career') }}">Home</a></li>
+                        <li>Knowledge Network</li>
+                    </ul>
+                    <h1 class="white-text">Knowledge Network Page</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog" class="section">
+        <div class="container">
+            <div class="widget tags-widget">
+                <a class="tag" href="#AI ML Specialist">AI ML Specialist</a>
+                <a class="tag" href="#API Integration Specialist">API Integration Specialist</a>
+                <a class="tag" href="#Penetration Tester">Penetration Tester</a>
+                <a class="tag" href="#Application Support Engineer">Application Support Engineer</a>
+                <a class="tag" href="#Business Analyst">Business Analyst</a>
+                <a class="tag" href="#Customer service executive">Customer service executive</a>
+                <a class="tag" href="#Cyber Security Specialist">Cyber Security Specialist</a>
+                <a class="tag" href="#Database Administrator">Database Administrator</a>
+                <a class="tag" href="#Data Scientist">Data Scientist</a>
+                <a class="tag" href="#Hardware Engineer">Hardware Engineer</a>
+                <a class="tag" href="#Helpdesk Engineer">Helpdesk Engineer</a>
+                <a class="tag" href="#Information Security Specialist">Information Security Specialist</a>
+                <a class="tag" href="#Networking Engineer">Networking Engineer</a>
+                <a class="tag" href="#Project Manager">Project Manager</a>
+                <a class="tag" href="#Software Developer">Software Developer</a>
+                <a class="tag" href="#Software Tester">Software Tester</a>
+                <a class="tag" href="#Technical writer">Technical writer</a>
+                <a class="tag" href="#Graphic Designer">Graphic Designer</a>
+            </div>
+            <div class="row" id="AI ML Specialist">
+                <div id="main" class="col-md-9">
+                    <div class="row">
+                        <ul class="list">
+                            <li id="API Integration Specialist">
+                                <h2>AI ML Specialist</h2>
+                                <p>AI/ML specialist is a software specialist with a strong mathematics background and a knowledge of coding, who’s core responsibilities are Designing and developing machine learning and deep learning systems, Running machine learning tests and experiments, Implementing appropriate ML algorithms.</p>
+                                <a href="{{ url_for('static', filename='AI_ML_Specialist.php') }}">Read more</a>
+                            </li>
+                            <li>
+                                <h2 id="Penetration Tester">API Integration Specialist</h2>
+                                <p>The API Integration Specialist are the technical problem solver who will help the clients and partners integrate with their system. Beyond the technical skillset, someone who can communicate clearly both orally and in writing. The incumbent will be required to bridge the gap between business resources and the technology team and effectively communicate with internal and external clients.</p>
+                                <a href="{{ url_for('static', filename='API_Integration _Specialist.php') }}">Read more</a>
+                            </li>
+                            <!-- Add more job roles similarly -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <a class="logo" style="font-size: 30px;" href="{{ url_for('career') }}">Career.ly</a>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-footer" class="row">
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="footer-copyright">
+                        <span>&copy; Copyright 2025. All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

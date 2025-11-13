@@ -1,0 +1,1 @@
+- [x] Convert form values to integers in testapp.py result() function to fix ValueError
